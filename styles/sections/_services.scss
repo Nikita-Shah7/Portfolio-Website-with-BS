@@ -1,0 +1,13 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.services{
+    &--heading{
+    h1{        
+        letter-spacing: 0.2rem;
+    }    
+    } 
+    .border-right{
+        border-right: 0.1rem solid $gray-300;
+    }
+}

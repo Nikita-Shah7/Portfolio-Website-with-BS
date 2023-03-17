@@ -1,0 +1,51 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.footer{
+    .contact-info-items{
+        .contact-info-item{
+            svg{
+                width: 70px;
+                height: 70px;
+                stroke: $primary;
+                stroke-width: 1;
+            }
+            .contact-info{
+                a{
+                    color: $white;
+                    font-weight: 600;
+                    text-decoration: none;
+                    &:hover{
+                        color: $primary;
+                    }                
+                }
+                small{
+                    font-weight: 500;
+                }
+            }
+            @include media-breakpoint-down(sm){
+                margin-left: 3rem;
+            }
+        }
+    }
+    .social-media{
+        background-color: $gray-900;
+        a{
+            color: $white;
+            text-decoration: none;            
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .copyright-bar{
+        a{
+            color: $white;
+            text-decoration: none;
+            &:hover{
+                color: $primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.testimonials{    
+    @include gradient;
+    .carousel-inner{
+        height: 25rem;
+    }
+   &__card{
+    background-color: rgba($color: $white, $alpha: 0.6);
+    border-radius: 1rem;
+   }
+   &__img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    border: 3px solid $primary;
+   }
+   &__label{
+    margin: 5rem;
+   }
+}

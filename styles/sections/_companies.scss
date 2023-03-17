@@ -1,0 +1,22 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.companies{
+    h5{
+        font-size: 1.5rem;
+    }
+    .company-items{
+        .company-item{
+            padding: 1rem auto;
+            .logo-box{ 
+                text-align: center;
+                height: 5rem;
+                img{
+                    height: 85%;                                         
+                    margin: 0.5rem; 
+                    margin-top: 0.7rem;
+                }
+            }            
+        }
+    }
+}

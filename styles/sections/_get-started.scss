@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.get-started{
+    background-color: $gray-200;
+        &--heading{
+            h1{        
+                letter-spacing: 0.2rem;
+            }        
+        }    
+        &--bottom{
+            .bottom-left{
+                @include gradient;
+                h1{
+                    font-size: 4rem;
+                }
+            }    
+            .bottom-right{
+                h3{
+                    @include gradient;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;                
+                }
+            }
+        }
+}
+

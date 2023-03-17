@@ -1,0 +1,42 @@
+// since, we have many similar buttons,
+// we create a separate file for buttons
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.btn-rounded{
+    position: relative;
+    padding: 0.8rem 1rem;
+    border: 1.5px solid $white;
+    font-size: 13px;
+    font-weight: 700;
+    span{
+        background-color: $primary;
+        border-radius: 50%;
+        padding: 9px;
+        margin-right: -7px;
+        margin-left: 9px;
+        i{
+            color: $white;
+        }
+    }
+    &:hover{
+        color: $white;
+        background-image: linear-gradient(to right,$primary,$secondary);
+        opacity: 0.9;
+        span{
+            background-color: rgba($color: #000000, $alpha: 0.6);
+        }
+    }
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    width: 35px;
+    height: 35px;
+    &:hover{
+        color: $white;
+        background-color: rgba(#6b2a9d,1);
+    }
+}

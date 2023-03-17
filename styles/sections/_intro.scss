@@ -1,0 +1,50 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.intro{
+    padding: 10rem 0 0 0;
+    @include gradient;
+    .left-intro{
+        padding-right: 5rem;
+        h1{
+            font-family: 'Tilt Warp', cursive;
+        }
+        h5{
+            font-family: 'Poppins', sans-serif;
+        }
+        @include media-breakpoint-down(md){
+            padding-left: 3rem;
+        }
+    }
+    .right-intro{
+        @include media-breakpoint-down(md){
+            margin-top: 6rem;
+        }
+        .video-box{
+            position: relative;
+            a{
+                i{
+                    font-size: 5.1rem;
+                }
+            }
+            .border-animation{
+                height: 6rem;
+                width: 6rem;
+                border-radius: 50%;
+                border: 0.6rem solid $white;
+                transform: translate(-50%,-50%);
+                animation: pulse-animation 1.5s linear infinite;
+                &--border-1{
+                    animation-delay: 1s;
+                }
+                &--border-2{
+                    animation-delay: 1.5s;
+                }
+            }
+            img{
+                height: 95%;
+                width: 95%;
+            }
+        }
+    }
+}

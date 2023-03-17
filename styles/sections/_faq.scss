@@ -1,0 +1,10 @@
+@use '../custom' as *;
+@use '../components/' as *;
+
+.faqs{
+    &--heading{
+        h1{        
+            letter-spacing: 0.2rem;
+        }        
+    }  
+}

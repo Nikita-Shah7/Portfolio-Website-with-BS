@@ -1,0 +1,20 @@
+// we have included it in all indivdidual files
+// @use 'custom' as *;
+
+// import components
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/scroll-bar';
+@use 'components/typography';
+
+// import sections
+@use 'sections/navbar';
+@use 'sections/intro';
+@use 'sections/companies';
+@use 'sections/services';
+@use 'sections/faq';
+@use 'sections/testimonials';
+@use 'sections/portfolio';
+@use 'sections/get-started';
+@use 'sections/footer';

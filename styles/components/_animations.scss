@@ -1,0 +1,12 @@
+// pulse-animation for play button in intro-section
+
+@keyframes pulse-animation {
+    0%{
+        transform:  translate(-50%,-50%) scale(1);
+        opacity: 1;
+    }    
+    100%{
+        transform:  translate(-50%,-50%) scale(1.5);
+        opacity: 0;
+    }
+}

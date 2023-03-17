@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+.heading-underline::before{
+    content: "";
+    width: 10rem;
+    height: 2px;
+    display: block;
+    margin: 1rem auto 0 auto;
+    background-color: $primary;        
+}
+.heading-underline::after{
+    content: "";
+    width: 2rem;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
